@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(48, 22, 139, 0.8);
+    backdrop-filter: blur(10px);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.hero-content h1 {
+    font-size: 50px;
+}
+.hero-content h1 span { color: #00eaff; }
+.hero-content p {
+    margin: 10px 0 20px;
+}
+.btn {
+    background: #00eaff;
+    padding: 12px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.hero-img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/* SECTIONS */
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about, .projects, .contact {
+    padding: 80px 10%;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.skill {
+    background: #111;
+    padding: 10px 20px;
+    border: 1px solid #00eaff;
+    border-radius: 5px;
+}
+
+/* PROJECTS */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.project-card {
+    background: #111;
+    padding: 25px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #00eaff;
+}
+.project-card a {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* CONTACT */
+.contact-form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+#formStatus {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-img {
+        margin-top: 20px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
