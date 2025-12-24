@@ -1,27 +1,21 @@
-// MOBILE MENU
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
+(function () {
+  emailjs.init("RaT5OTuS8MMNqvbtC"); // from EmailJS
+})();
 
-menuBtn.addEventListener("click", () => {
-    navLinks.style.display =
-        navLinks.style.display === "flex" ? "none" : "flex";
-});
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
 
-// CONTACT FORM (Frontend Simulation)
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
-    let status = document.getElementById("formStatus");
-
-    if (name && email && message) {
-        status.style.color = "lightgreen";
-        status.innerText = "Message sent successfully!";
-        this.reset();
-    } else {
-        status.style.color = "red";
-        status.innerText = "Please fill all fields!";
+  emailjs.sendForm(
+    "service_adnr2h5",
+    "template_70f1wyw",
+    this
+  ).then(
+    function() {
+      document.getElementById("status").innerText = "Message sent successfully!";
+    },
+    function(error) {
+      document.getElementById("status").innerText = "Failed to send message.";
+      console.error(error);
     }
+  );
 });

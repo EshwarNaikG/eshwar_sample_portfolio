@@ -120,7 +120,7 @@ body {
 }
 
 /* CONTACT */
-.contact-form {
+/* .contact-form {
     max-width: 450px;
     margin: auto;
     display: flex;
@@ -135,7 +135,7 @@ body {
 #formStatus {
     margin-top: 10px;
     text-align: center;
-}
+} */
 
 /* FOOTER */
 footer {
