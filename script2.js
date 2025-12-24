@@ -9,20 +9,20 @@ menuBtn.addEventListener("click", () => {
 
 // CONTACT FORM (Frontend Simulation)
 
-// document.getElementById("contactForm").addEventListener("submit", function (e) {
-//     e.preventDefault();
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-//     let name = document.getElementById("name").value;
-//     let email = document.getElementById("email").value;
-//     let message = document.getElementById("message").value;
-//     let status = document.getElementById("formStatus");
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+    let status = document.getElementById("formStatus");
 
-//     if (name && email && message) {
-//         status.style.color = "lightgreen";
-//         status.innerText = "Message sent successfully!";
-//         this.reset();
-//     } else {
-//         status.style.color = "red";
-//         status.innerText = "Please fill all fields!";
-//     }
-// });
+    if (name && email && message) {
+        status.style.color = "lightgreen";
+        status.innerText = "Message sent successfully!";
+        this.reset();
+    } else {
+        status.style.color = "red";
+        status.innerText = "Please fill all fields!";
+    }
+});
