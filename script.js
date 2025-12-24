@@ -1,3 +1,14 @@
+// Menu Bar
+// MOBILE MENU
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.style.display =
+        navLinks.style.display === "flex" ? "none" : "flex";
+});
+
+// Contact Form
 (function () {
   emailjs.init("RaT5OTuS8MMNqvbtC"); // from EmailJS
 })();
