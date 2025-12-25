@@ -89,7 +89,7 @@ body {
 .skills {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 .skill {
     background: #111;
